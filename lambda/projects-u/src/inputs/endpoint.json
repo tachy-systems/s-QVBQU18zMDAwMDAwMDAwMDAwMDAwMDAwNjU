@@ -1,0 +1,83 @@
+{
+     "cnyp-website-gen-api-stack": {
+          "cgw-api-gateway": {
+               "account": "1949874554",
+               "region": "ap-southeast-2",
+               "separateHostedZones": false,
+               "singleRepo": false,
+               "repoName": "cnyp-8mfj3gpuhd",
+               "fileLocation": "Local",
+               "resources": {},
+               "features": {
+                    "Authorization": {
+                         "path": "../../ts-common-authorizer/src/index.js",
+                         "env": {}
+                    },
+                    "Authentication": {
+                         "Name": "Authentication",
+                         "Props": "key"
+                    },
+                    "ErrorHandler": {
+                         "Name": "ErrorHandler",
+                         "Props": "key"
+                    },
+                    "DiscoveryService": {
+                         "key": "adra"
+                    }
+               },
+               "schemas": {
+                    "process": "process.js"
+               },
+               "schemaFileBasePath": "../pipeline/requirements/schemas",
+               "responseFileBasePath": "../pipeline/requirements/responses",
+               "endpointsInfoArray": [
+                    {
+                         "projectName": "cogniyonPlatform",
+                         "projectShortName": "cnyp",
+                         "resourceName": "websitegen",
+                         "path": "/start",
+                         "httpMethod": "POST",
+                         "id": 1,
+                         "singleRepo": false,
+                         "distributed": false,
+                         "stage": "dev",
+                         "deploymentGroup": "cnyp-website-gen-api-stack",
+                         "gatewayGroup": "cgw-api-gateway",
+                         "apiGatewayType": "http",
+                         "serverUrl": "api-cogniyonPlatform-8mfj3gpuhd-dev.talksite.ai",
+                         "supportedSignIns": [],
+                         "version": "v1",
+                         "pathPrefix": "/jobs",
+                         "requestQueryParams": null,
+                         "requestHeaders": null,
+                         "requestBody": null,
+                         "responseHeader": null,
+                         "responseBody": null,
+                         "language": "nodejs",
+                         "envVariables": ["DynamoDBTable", "Stage"],
+                         "responsesFile": "websitegen-job-producer.responses.json",
+                         "serverType": "AwsServerless",
+                         "dependenciesRef": [],
+                         "featuresRef": ["Authentication", "ErrorHandler", "DiscoveryService"],
+                         "outputType": "Json",
+                         "repoName": "cnyp-8mfj3gpuhd",
+                         "endpointId": "cogniyonPlatform-8mfj3gpuhd-1-1",
+                         "responseType": "Single",
+                         "serviceMethodName": "websitegen-job-producer",
+                         "projectId": "8mfj3gpuhd",
+                         "serviceId": "cnyp-websitegen-job-producer",
+                         "stackId": "",
+                         "apigatewayId": "",
+                         "apigatewayUrl": "",
+                         "apiType": "ApiLambdaHelloWorld",
+                         "operation": "Create",
+                         "schemasRef": ["websitegen"],
+                         "sourceHttpMethod": "Create"
+                    }
+               ],
+               "stage": "dev",
+               "outputType": "Json",
+               "serverUrl": "api-cogniyonPlatform-8mfj3gpuhd-dev.talksite.ai"
+          }
+     }
+}

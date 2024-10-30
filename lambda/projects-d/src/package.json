@@ -1,0 +1,21 @@
+{
+  "name": "domains-contacts-delete",
+  "version": "1.0.0",
+  "description": "domains-contacts-delete",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "unit-test": "mocha ../unitTesting/index.js --timeout 100000",
+    "api-test": "mocha ../apiTesting/index.js --timeout 100000"
+  },
+  "author": "Tachyon Systems",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.1057.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "@cny-src/serverless.aws.lambda": "^0.0.43"
+  }
+}

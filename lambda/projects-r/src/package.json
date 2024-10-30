@@ -1,0 +1,17 @@
+{
+  "name": "domains-contacts-read",
+  "version": "1.0.0",
+  "description": "domains-contacts-read",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Tachyon Systems",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.1057.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@cny-src/serverless.aws.lambda": "^0.0.43"
+  }
+}

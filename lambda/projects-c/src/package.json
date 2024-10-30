@@ -1,0 +1,16 @@
+{
+  "name": "domains-contacts-create",
+  "version": "1.0.0",
+  "description": "domains-contacts-create",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {},
+  "author": "Tachyon Systems",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  },
+  "dependencies": {
+    "@cny-src/serverless.aws.lambda": "^0.0.43"
+  }
+}
